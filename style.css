@@ -1,0 +1,439 @@
+h2 {
+    color: red
+}
+
+#idSelector {
+    color: cyan
+}
+
+.classSelector {
+    color: aquamarine
+}
+
+.backgroundProps {
+    /* vh - view height (adjust according to the diffrent screen sizes) */
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgb(255, 204, 127); */
+    background-image: url('img.jpg');
+
+    /* Repeats the background content (repeat-y used for y axis) */
+    /* background-repeat: repeat-y; */
+    /* background-repeat: repeat; */
+
+    /* CAME in css3, which spreads the content in whole screen */
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+}
+
+.backgroundProps1 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgb(255, 204, 127); */
+    background-image: url('img1.jpg');
+    /* background-repeat: repeat; */
+    background-repeat: repeat-y;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#fontId {
+    font-family: 'Open Sans', sans-serif;
+    font-variant: small-caps;
+    /* 1em = 16px */
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    direction: ltr;
+    text-indent: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Normal link color */
+a:link {
+    color: black
+}
+
+/* when we visited the link(page) */
+a:visited {
+    color: blueviolet
+}
+
+/* when hover on the link */
+a:hover {
+    color: red
+}
+
+/* When click holds and not released */
+a:active {
+    color: green
+}
+
+.borderStyle {
+    height: 100px;
+    width: 400px;
+    /* border-width: 2px;
+    border-color: blue;
+    border-style: solid; */
+    border: 5px blue solid;
+
+    /* it gives a curve at every corner of the box */
+    border-radius: 50px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: lower-roman;
+}
+
+.boxStyle {
+    height: 100px;
+    width: 500px;
+    background-color: beige;
+    border: 4px black dashed;
+
+    /* space between the content inside the box &  the box-border */
+    padding: 10px;
+}
+
+input {
+    /* padding-left: 10px;
+    padding-bottom: 6px;
+    padding-top: 10px;
+    padding-right: 10px; */
+
+    /* top right bottem left */
+    padding: 10px 10px 6px 10px;
+    margin: 30px 10px;
+}
+
+.overflowStyle {
+    height: 200px;
+    width: 100px;
+    border: 2px bisque solid;
+    overflow: scroll;
+}
+
+.parent {
+    height: 300px;
+    width: 200px;
+    background-color: blueviolet;
+    position: relative;
+}
+
+.child1 {
+    height: 30px;
+    width: 50px;
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+}
+
+.child2 {
+    height: 30px;
+    width: 50px;
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+}
+
+.child3 {
+    height: 30px;
+    width: 50px;
+    background-color: turquoise;
+    position: absolute;
+    bottom: 0;
+}
+
+.child4 {
+    height: 30px;
+    width: 50px;
+    background-color: brown;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.zindexStyle {
+    height: 100px;
+    width: 200px;
+    background-color: rgb(79, 42, 165);
+    position: relative;
+}
+
+/* higher value in z-index pute on higher level */
+.room1 {
+    height: 30px;
+    width: 100px;
+    background-color: brown;
+    position: absolute;
+    z-index: 1;
+}
+
+.room2 {
+    height: 30px;
+    width: 100px;
+    background-color: aquamarine;
+    position: absolute;
+    z-index: 3;
+}
+
+.room3 {
+    height: 30px;
+    width: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    z-index: 2;
+}
+
+.header {
+    height: 80px;
+    width: 400px;
+    background-color: black;
+}
+
+.logo {
+    height: 80px;
+    width: 100px;
+    background-color: aquamarine;
+    text-align: center;
+    float: left;
+}
+
+.menu {
+    height: 80px;
+    width: 300px;
+    background-color: blueviolet;
+    float: right;
+    text-align: center;
+}
+
+.menu>ul {
+    list-style: none;
+}
+
+.menu>ul>li {
+    display: inline;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.cursorStyle {
+    height: 80px;
+    width: 300px;
+    background-color: chartreuse;
+    /* cursor: pointer; */
+    cursor: wait;
+    /* cursor: help; */
+}
+
+
+#textEffectStyle {
+    /* Horizontal - Vertical - Shadow - color */
+    text-shadow: 2px 5px 5px green;
+}
+
+#wordWrapStyle {
+    word-wrap: break-word;
+    width: 200px;
+    border: 1px solid red;
+}
+
+@font-face {
+    font-family: xyz;
+    src: url('Hujan.ttf');
+}
+
+#fontStyle {
+    font-family: xyz;
+    font-size: xx-large;
+}
+
+@font-face {
+    font-family: rajat;
+    src: url('Urzeit-Personal_Use.ttf');
+}
+
+#fontStyle1 {
+    font-family: rajat;
+    font-size: xx-large;
+}
+
+.animationDiv {
+    height: 100px;
+    width: 100%;
+    position: relative;
+
+}
+
+.animationDiv img {
+    width: 144px;
+    position: absolute;
+    left: 0;
+    height: 100px;
+    animation-name: runBatman;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.animationDiv img:hover {
+    animation-duration: 1s;
+}
+
+@keyframes runBatman {
+    from {
+        left: 0
+    }
+
+    to {
+        left: 85%
+    }
+}
+
+#heartBeatStyle {
+    height: 50px;
+    width: 50px;
+    transition-property: height, width;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+#heartBeatStyle:hover {
+    height: 100px;
+    width: 100px;
+
+    /* Transform - scale() can do the same */
+    /* transform: scale(2, 2); */
+}
+
+#multiColumnsStyle {
+    column-count: 6;
+    column-gap: 40px;
+    column-rule: dashed;
+    column-rule-color: brown;
+    text-align: justify;
+}
+
+#backgroundStyle {
+    height: 200px;
+    width: 400px;
+    background-image: url('img1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#backgroundBorderStyle {
+    height: 200px;
+    width: 400px;
+    background-image: url('img1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    /* Horizontal-vertical-top-strect-color */
+    box-shadow: 10px 10px 10px grey;
+}
+
+#resizeStyle {
+    width: 400px;
+    height: 100px;
+    border: 2px solid black;
+    overflow: auto;
+    resize: horizontal;
+}
+
+#boxSizingStyle {
+    width: 400px;
+    height: 100px;
+    border: 2px solid black;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+#transformDivStyle {
+    width: 400px;
+    height: 100px;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+#transformDivStyle>p {
+    transform: translatex(20px);
+}
+
+#rotateStyle:hover {
+    /* transition-delay: 2s; */
+    transform: rotate(90deg);
+}
+
+#linearGradientStyle {
+    width: 400px;
+    height: 100px;
+    border: 1px solid black;
+    background-image: linear-gradient(to left, blue, red);
+}
+
+.flexClass {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to left, blue, red);
+    /* Flex properties */
+    display: flex;
+    /* direction of the content */
+    flex-direction: row;
+    /* content projection with proper space */
+    justify-content: space-around;
+    /* content alignment */
+    align-items: center;
+}
+
+
+.flexSection {
+    width: 100%;
+    background-color: cyan;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* for setting items horizontally */
+    justify-content: space-between;
+    /* for setting items vertically */
+    align-items: center;
+}
+
+.flex1 {
+    /* flex: 3; */
+    background: green;
+}
+
+.flex2 {
+    /* flex: 1; */
+    background: red;
+}
+
+.flex3 {
+    /* flex: 1; */
+    background: yellow;
+}
+
+.flexSection div {
+    /* width: 30%; */
+    flex-basis: 30%;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+
+/* for mobile responsiveness */
+/* @media(min-width:768px) {
+    .flexSection {
+        display: flex;
+        justify-content: space-between;
+    }
+} */
